@@ -44,12 +44,16 @@ export default function KoushaPortfolio() {
     { label: "Email", href: "mailto:kousha.salimkhan.076@my.csun.edu" },
   ];
 
-  const float = {
-    animate: {
-      y: [0, -10, 0],
-      transition: { duration: 5, repeat: Infinity, ease: "easeInOut" },
-    },
-  };
+const float = {
+  animate: {
+    y: [0, -10, 0],
+  },
+  transition: {
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut" as const,
+  },
+};
 
   const candy = [
     { emoji: "🍬", className: "top-20 left-[8%] text-5xl rotate-[-14deg]", duration: 6 },
